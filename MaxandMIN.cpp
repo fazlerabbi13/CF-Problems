@@ -21,6 +21,20 @@ int findMax(vector<int>&arr,int n){
     return max;
 }
 
+int main(){
+    int N;
+    cin>> N;
+    vector<int>arr(N);
+
+    for(int i=0;i<N; i++){
+        cin>>arr[i];
+    }
+    int min=findMin(arr,N);
+    int max=findMax(arr,N);
+
+    cout<<min<<" "<< max;
+    return 0;
+}
 
 
 
