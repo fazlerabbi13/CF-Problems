@@ -1,27 +1,22 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int t,count=0;;
-    string s;
+int main() {
+    int n;
+    cin >> n;
 
-    
-    cin>>t;
+    while (n--) {
+        string s;
+        cin >> s;
 
-    while(t--){
-        cin>>s;
+        int len = s.size();
 
-        int sz = s.size();
-
-        if(sz > 10){
-            for(int i = 1;i<s.size()-1;i++){
-                count++;
-            }
-            cout<<s[0]+count+s[s.size()-1]<<"\n";
-           
-        }else{
-            cout<<s<<"\n";
+        if (len > 10) {
+            cout << s[0] << len - 2 << s[len - 1] << "\n";
+        } else {
+            cout << s << "\n";
         }
     }
+
     return 0;
 }
