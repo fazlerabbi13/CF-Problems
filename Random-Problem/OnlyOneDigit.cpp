@@ -17,7 +17,7 @@ int main(){
             cout<<0<<"\n";
         }else{
             char min_disit = *min_element(x.begin(),x.end());
-            // cout<<(min_disit-'0')<<"\n";
+            
             cout<<min_disit<<"\n";
         }
     }
