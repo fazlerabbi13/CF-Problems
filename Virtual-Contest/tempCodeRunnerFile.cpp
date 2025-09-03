@@ -1,4 +1,1 @@
- 3 * k - 1 << "\n";
-    }
-    return 0;
-}
+Last odd number to balance sums

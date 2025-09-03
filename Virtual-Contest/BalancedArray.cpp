@@ -31,7 +31,7 @@ int main() {
         }
 
         // Last odd number to balance sums
-        // arr.push_back(3 * k - 1);
+        arr.push_back(3 * k - 1);
 
         // Print the vector
         // for (int x : arr) {
