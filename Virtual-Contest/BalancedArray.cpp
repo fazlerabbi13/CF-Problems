@@ -34,10 +34,10 @@ int main() {
         arr.push_back(3 * k - 1);
 
         // Print the vector
-        // for (int x : arr) {
-        //     cout << x << " ";
-        // }
-        // cout << "\n";
+        for (int x : arr) {
+            cout << x << " ";
+        }
+        cout << "\n";
     }
     return 0;
 }
