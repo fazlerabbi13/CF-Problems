@@ -26,9 +26,9 @@ int main() {
         }
 
         // Second half: first (k-1) odd numbers
-        // for (int i = 1; i < k; i++) {
-        //     arr.push_back(2 * i - 1);
-        // }
+        for (int i = 1; i < k; i++) {
+            arr.push_back(2 * i - 1);
+        }
 
         // Last odd number to balance sums
         // arr.push_back(3 * k - 1);
