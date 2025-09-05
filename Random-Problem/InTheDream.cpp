@@ -1,19 +1,23 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
+bool okHalf(long long x, long long y) {
+    long long M = max(x, y);
+    long long m = min(x, y);
+    return M <= 2 * (m + 1);
+}
 
-    int t;
-    cin>>t;
-    while(t--){
-        int a,b,c,d;
-        cin>>a>>b>>c>>d;
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-        if(a<b && c<d){
-            cout<< "Yes" <<"\n";
-        }else if()
+    int t; 
+    if (!(cin >> t)) return 0;
+    while (t--) {
+        long long a, b, c, d;
+        cin >> a >> b >> c >> d;
+
+        cout << (okHalf(a, b) && okHalf(c, d) ? "YES\n" : "NO\n");
     }
     return 0;
 }
