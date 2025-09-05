@@ -27,9 +27,9 @@ int main() {
         // check condition: distance between first and last closed doors
         if (last - first + 1 <= x) {
             cout << "YES\n";
-        } else {
-            cout << "NO\n";
-        }
+        // } else {
+        //     cout << "NO\n";
+        // }
     }
     return 0;
 }
