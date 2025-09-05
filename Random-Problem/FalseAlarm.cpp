@@ -15,14 +15,14 @@ int main() {
 
         // find first and last closed doors
         int first = -1, last = -1;
-        // for (int i = 0; i < n; i++) {
-        //     if (a[i] == 1) {
-        //         if (first == -1) {
-        //             first = i;    // first closed door
-        //         }
-        //         last = i;         // update last closed door
-        //     }
-        // }
+        for (int i = 0; i < n; i++) {
+            if (a[i] == 1) {
+                if (first == -1) {
+                    first = i;    // first closed door
+                }
+                last = i;         // update last closed door
+            }
+        }
 
         // check condition: distance between first and last closed doors
         if (last - first + 1 <= x) {
