@@ -14,12 +14,12 @@ int main() {
         for (int i = 1; i <= n; i++) cin >> a[i];
 
         // prefix sums modulo 3
-        // vector<int> pref(n + 1, 0);
-        // for (int i = 1; i <= n; i++)
-        //     pref[i] = (pref[i - 1] + a[i]) % 3;
+        vector<int> pref(n + 1, 0);
+        for (int i = 1; i <= n; i++)
+            pref[i] = (pref[i - 1] + a[i]) % 3;
 
-        // bool found = false;
-        // int ansL = 0, ansR = 0;
+        bool found = false;
+        int ansL = 0, ansR = 0;
 
         // enumerate all l, r
         // for (int l = 1; l <= n - 2 && !found; l++) {
