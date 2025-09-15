@@ -22,22 +22,22 @@ int main() {
         int ansL = 0, ansR = 0;
 
         // enumerate all l, r
-        // for (int l = 1; l <= n - 2 && !found; l++) {
-        //     for (int r = l + 1; r <= n - 1 && !found; r++) {
-        //         int s1 = pref[l];
-        //         int s2 = (pref[r] - pref[l] + 3) % 3;
-        //         int s3 = (pref[n] - pref[r] + 3) % 3;
+        for (int l = 1; l <= n - 2 && !found; l++) {
+            for (int r = l + 1; r <= n - 1 && !found; r++) {
+                int s1 = pref[l];
+                int s2 = (pref[r] - pref[l] + 3) % 3;
+                int s3 = (pref[n] - pref[r] + 3) % 3;
 
-        //         if ((s1 == s2 && s2 == s3) || 
-        //             (s1 != s2 && s2 != s3 && s1 != s3)) {
-        //             ansL = l;
-        //             ansR = r;
-        //             found = true;
-        //         }
-        //     }
-        // }
+                if ((s1 == s2 && s2 == s3) || 
+                    (s1 != s2 && s2 != s3 && s1 != s3)) {
+                    ansL = l;
+                    ansR = r;
+                    found = true;
+                }
+            }
+        }
 
-        // cout << ansL << " " << ansR << "\n";
+        cout << ansL << " " << ansR << "\n";
     }
     return 0;
 }
