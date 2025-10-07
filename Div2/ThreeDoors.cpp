@@ -21,7 +21,7 @@ bool canOpenAllDoors(int x, int a, int b, int c) {
     keyBehind[2] = b;
     
     // Store the key behind door 3 (value of 'c')
-    // keyBehind[3] = c;
+    keyBehind[3] = c;
     
     // Variable to track which key we currently have in our hand
     // Initially, we have key 'x'
