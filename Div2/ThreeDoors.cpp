@@ -25,7 +25,7 @@ bool canOpenAllDoors(int x, int a, int b, int c) {
     
     // Variable to track which key we currently have in our hand
     // Initially, we have key 'x'
-    // int currentKey = x;
+    int currentKey = x;
     
     // Loop continues while two conditions are true:
     // 1. currentKey != 0 (we have a key, not empty handed)
