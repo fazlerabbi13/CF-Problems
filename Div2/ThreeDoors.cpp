@@ -15,17 +15,17 @@ bool canOpenAllDoors(int x, int a, int b, int c) {
     vector<int> keyBehind(4);
     
     // Store the key behind door 1 (value of 'a')
-    // keyBehind[1] = a;
+    keyBehind[1] = a;
     
     // Store the key behind door 2 (value of 'b')
-    // keyBehind[2] = b;
+    keyBehind[2] = b;
     
     // Store the key behind door 3 (value of 'c')
-    keyBehind[3] = c;
+    // keyBehind[3] = c;
     
     // Variable to track which key we currently have in our hand
     // Initially, we have key 'x'
-    int currentKey = x;
+    // int currentKey = x;
     
     // Loop continues while two conditions are true:
     // 1. currentKey != 0 (we have a key, not empty handed)
