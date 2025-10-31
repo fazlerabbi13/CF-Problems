@@ -27,13 +27,18 @@ int main(){
         while(q--){
             int l,r;
             ll k;
-
+            cin >> l >> r >> k;
+            
             ll length = r - l + 1;
             ll subSum = prefixArr[r] - prefixArr[l - 1];
 
             ll newSum = totalSum - subSum + length * k;
 
-            
+            if(newSum % 2 == 1){
+                cout << "Yes\n";
+            }else{
+                cout << "No\n";
+            }
         }
 
 
